@@ -1,0 +1,37 @@
+#include<iostream>
+using namespace std;
+int main(){
+	system ("color B");
+	
+	//Mengurutkan 3 bilangan dari yang terkecil ke terbesar. Dalam algoritma yang saya buat, 
+	//saya ingin memastikan bahwa nilai A adalah yang terkecil dengan cara membandingkan nilainya dengan nilai B dan C. 
+	//Apabila A yang terkecil, maka tinggal membandingkan nilai B dengan nilai C. Sehingga akan terurut A-B-C atau A-C-B. 
+	//Begitupula dengan yang lain.
+		
+	int a, b, c;
+	
+	cout << " Masukan Nilai A : "; cin >> a;
+	cout << " Masukan Nilai B : "; cin >> b; 
+	cout << " Masukan Nilai C : "; cin >> c;
+	if(a<b and a<c){
+		if(b<c){
+			cout << a << ' ' << b << ' ' << c << endl;
+		}else{
+			cout << a << ' ' << c << ' ' << b << endl; 
+		}
+	}else if (b<a and b<c){
+		if(a<c){
+			cout << b << ' ' << a << ' ' << c << endl; 
+		}else{
+			cout << b << ' ' << c << ' ' << a << endl;
+		}
+	}else{
+		if(b<a){
+			cout << c << ' ' << b << ' ' << a << endl; 
+		}else{
+			cout << c << ' ' << a << ' ' << b << endl; 
+		}
+	}
+	
+	return 0;
+}
